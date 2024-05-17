@@ -18,3 +18,84 @@ model User {
   updatedAt DateTime @updatedAt
   username  String   @unique
 }
+
+model BibleSection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model HomeScreen {
+  createdAt      DateTime @default(now())
+  dailyVerse     String?
+  id             String   @id @default(cuid())
+  quickLinks     String?
+  updatedAt      DateTime @updatedAt
+  welcomeMessage String?
+}
+
+model PrayerSection {
+  createdAt        DateTime @default(now())
+  dailyPrayerTheme Json?
+  id               String   @id @default(cuid())
+  prayerCommitment Json?
+  prayerEvent      Json?
+  prayerGroup      Json?
+  prayerRequest    Json?
+  testimony        Json?
+  updatedAt        DateTime @updatedAt
+}
+
+model WorshipSection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model FamilySection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model EvangelismSection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model HelpSupportSection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model GivingSection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model ProfileSection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model CommunitySection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model GrowthSection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model ServiceSection {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
